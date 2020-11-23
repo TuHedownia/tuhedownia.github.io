@@ -1,7 +1,7 @@
-Gracz,Gra 1,Suma
-LanaBanana,6,6
-Dawid,4,4
-Michal,4,4
-Slowianka,3,3
-Jakub,2,2
-zelka,2,2
+Gracz,Gra 1,Gra 2,Suma
+zelka,2,8,10
+LanaBanana,6,-1,5
+Michal,4,1,5
+Dawid,4,0,4
+Slowianka,3,0,3
+Jakub,2,0,2
