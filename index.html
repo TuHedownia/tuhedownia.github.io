@@ -1,0 +1,122 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wielki Turniej TuHedowni!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+  <style>
+    body {
+      padding: 2rem;
+      background: url(https://i.redd.it/hgc1cail8jn51.jpg);
+      background-size: cover;
+    }
+
+    .centered {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    tbody tr:nth-child(1) {
+      background: #C9B037a8;
+    }
+
+    tbody tr:nth-child(2) {
+      background: #D7D7D7a8;
+    }
+
+    tbody tr:nth-child(3) {
+      background: #AD8A56a8;
+    }
+
+    table {
+      background: #ffffffd6 !important;
+    }
+
+    .title {
+      color: white;
+    }
+
+    .subtitle {
+      color: white;
+    }
+
+    .title-box {
+      background-color: #000000a8;
+      text-align: center;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+  </style>
+
+  <script>
+      function displayCSV(content) {
+
+          const tbody = document.getElementById("table_body");
+          const thead = document.getElementById("table_head");
+
+          let counter = 0;
+          const lines = content.trim().split("\n");
+          const firstLine = lines.shift();
+
+          for (const headerText of firstLine.split(',')) {
+              const header = document.createElement("th");
+              header.innerText = headerText;
+              thead.appendChild(header);
+          }
+
+          for (const line of lines) {
+              counter += 1;
+              const tr = document.createElement("tr");
+
+              const position = document.createElement("th");
+              position.innerText = counter.toString();
+              tr.appendChild(position);
+
+              for (const value of line.split(",")) {
+                  const td = document.createElement("td")
+                  td.innerText = value;
+                  tr.appendChild(td);
+              }
+
+              tbody.appendChild(tr);
+          }
+      }
+
+      function onLoad() {
+          const url = `https://tuhedownia.github.io/results.csv?ts=${Date.now()}`;
+          fetch(url)
+              .then(response => response.text())
+              .then(displayCSV);
+      }
+  </script>
+</head>
+<body>
+
+<div class="container centered">
+  <div class="title-box">
+    <h1 class="title is-1">Wielki Turniej TuHedowni!</h1>
+    <h2 class="subtitle is-3">Ranking wszystkich graczy</h2>
+  </div>
+
+  <div class="table-container">
+    <table class="table is-hoverable is-fullwidth">
+      <thead>
+      <tr id="table_head">
+        <th>Miejsce</th>
+      </tr>
+      </thead>
+      <tbody id="table_body">
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+    onLoad();
+</script>
+</body>
+</html>
