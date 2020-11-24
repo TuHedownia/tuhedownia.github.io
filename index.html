@@ -8,6 +8,7 @@
 
   <style>
     body {
+      height: 100%;
       padding: 2rem;
       background: url(https://i.redd.it/hgc1cail8jn51.jpg);
       background-size: cover;
@@ -63,11 +64,23 @@
       border-radius: 1rem;
     }
 
-    .impostor{
+    .impostor {
+      color: red;
+      position: relative;
+    }
+
+    .impostor::after {
+      content: '';
+      background: url('impostor.svg') no-repeat;
+      background-size: 1rem 1rem;
+      position: absolute;
+      top: 0.5rem;
+      height: 1rem;
+      width: 1rem;
       color: red;
     }
 
-    .absent{
+    .absent {
       color: transparent;
     }
   </style>
