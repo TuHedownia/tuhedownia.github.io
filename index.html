@@ -69,15 +69,14 @@
       position: relative;
     }
 
-    .impostor::after {
+    .impostor:hover::after {
       content: '';
       background: url('impostor.svg') no-repeat;
-      background-size: 1rem 1rem;
+      background-size: contain;
       position: absolute;
-      top: 0.5rem;
-      height: 1rem;
-      width: 1rem;
-      color: red;
+      top: 0;
+      height: 2rem;
+      width: 2rem;
     }
 
     .absent {
