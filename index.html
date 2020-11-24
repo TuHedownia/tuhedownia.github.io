@@ -57,17 +57,24 @@
       padding: 1rem;
       border-radius: 1rem;
     }
+
+    .impostor{
+      color: red;
+    }
   </style>
 
   <script>
-      function displayCSV(content) {
+      function displayCSV(contents) {
+          const [content1, content2] = contents;
 
           const tbody = document.getElementById("table_body");
           const thead = document.getElementById("table_head");
 
           let counter = 0;
-          const lines = content.trim().split("\n");
+          const lines = content1.trim().split("\n");
+          const lines2 = content2.trim().split("\n");
           const firstLine = lines.shift();
+          const firstLine2 = lines2.shift();
 
           for (const headerText of firstLine.split(',')) {
               const header = document.createElement("th");
@@ -78,15 +85,23 @@
           for (const line of lines) {
               counter += 1;
               const tr = document.createElement("tr");
+              const line2 = lines2[counter - 1];
 
+              const impostors = line2.split(",");
+              let counter2 = 0;
+              
               const position = document.createElement("th");
               position.innerText = counter.toString();
               tr.appendChild(position);
 
               for (const value of line.split(",")) {
-                  const td = document.createElement("td")
+                  const td = document.createElement("td");
+                  if (counter2 > 0 && impostors[counter2-1] === "1") {
+                    td.classList.add("impostor");
+                  }
                   td.innerText = value;
                   tr.appendChild(td);
+                  counter2 += 1;
               }
 
               tbody.appendChild(tr);
@@ -95,8 +110,9 @@
 
       function onLoad() {
           const url = `https://tuhedownia.github.io/results.csv?ts=${Date.now()}`;
-          fetch(url)
-              .then(response => response.text())
+          const url2 = `https://tuhedownia.github.io/impostors.csv?ts=${Date.now()}`;
+            Promise.all([fetch(url), fetch(url2)])
+              .then(([response, response2]) => Promise.all([response.text(), response2.text()]))
               .then(displayCSV);
       }
   </script>
