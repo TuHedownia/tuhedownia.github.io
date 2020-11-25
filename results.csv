@@ -1,11 +1,11 @@
-Gracz,Gra 1,Gra 2,Gra 3,Gra 4,Gra 5,Gra 6,Gra 7,Gra 8,Suma
-Drucker,6,6,2,9,1,4,8,6,42
-Cortez,4,5,4,7,8,3,8,0,39
-Jakub,4,4,8,0,8,6,8,0,38
-andrzej,1,6,8,0,7,4,6,6,38
-Neimak,4,6,4,0,8,6,8,0,36
-Michal,8,2,5,0,8,8,4,0,35
-LanaBanana,4,6,8,0,0,4,8,0,30
-Slowianka,4,8,4,-1,8,3,1,0,27
-SzymixJP,4,7,4,0,4,4,2,0,25
-Dhar,0,1,4,0,4,0,4,0,13
+Gracz,Gra 1,Gra 2,Gra 3,Gra 4,Gra 5,Gra 6,Gra 7,Suma
+Cortez,4,5,4,7,8,3,8,39
+Jakub,4,4,8,0,8,6,8,38
+Drucker,6,6,2,9,1,4,8,36
+Neimak,4,6,4,0,8,6,8,36
+Michal,8,2,5,0,8,8,4,35
+andrzej,1,6,8,0,7,4,6,32
+LanaBanana,4,6,8,0,0,4,8,30
+Slowianka,4,8,4,-1,8,3,1,27
+SzymixJP,4,7,4,0,4,4,2,25
+Dhar,0,1,4,0,4,0,4,13
