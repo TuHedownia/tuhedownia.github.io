@@ -1,11 +1,11 @@
-Gracz,Gra 1,Suma
-Michal,8,8
-Drucker,6,6
-Cortez,4,4
-Jakub,4,4
-LanaBanana,4,4
-Neimak,4,4
-Slowianka,4,4
-SzymixJP,4,4
-andrzej,1,1
-Dhar,0,0
+Gracz,Gra 1,Gra 2,Suma
+Drucker,6,6,12
+Slowianka,4,8,12
+SzymixJP,4,7,11
+LanaBanana,4,6,10
+Michal,8,2,10
+Neimak,4,6,10
+Cortez,4,5,9
+Jakub,4,4,8
+andrzej,1,6,7
+Dhar,0,1,1
