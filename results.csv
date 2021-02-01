@@ -1,11 +1,11 @@
-Gracz,Gra 1,Suma
-Jakub,6,6
-Kubson,6,6
-Monia,6,6
-BAKLAZAN,5,5
-Dawid,5,5
-Neimak,5,5
-Cortez,4,4
-andrzej,4,4
-SzymixJP,2,2
-boomer,2,2
+Gracz,Gra 1,Gra 2,Suma
+Jakub,6,7,13
+Dawid,5,6,11
+Monia,6,5,11
+BAKLAZAN,5,4,9
+Neimak,5,4,9
+andrzej,4,5,9
+Kubson,6,2,8
+SzymixJP,2,5,7
+boomer,2,5,7
+Cortez,4,2,6
