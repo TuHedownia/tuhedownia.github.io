@@ -1,11 +1,12 @@
-Gracz,Gra 1,Gra 2,Gra 3,Suma
-Kubson,7,7,8,22
-andrzeJJ,8,6,8,22
-BlackRose,1,4,4,9
-boomer,0,6,3,9
-Dawid,0,5,1,6
-Kostek,0,4,2,6
-Slowianka,0,6,0,6
-SzymixJP,0,4,1,5
-Jakub,0,2,0,2
-NeJJmak,0,2,0,2
+Gracz,Gra 1,Gra 2,Gra 3,Gra 4,Suma
+andrzeJJ,8,6,8,0,22
+Kubson,7,7,8,-1,21
+boomer,0,6,3,6,15
+Kostek,0,4,2,8,14
+BlackRose,1,4,4,-1,8
+Slowianka,0,6,0,0,6
+Dawid,0,5,1,-1,5
+SzymixJP,0,4,1,0,5
+Jakub,0,2,0,0,2
+NeJJmak,0,2,0,0,2
+Monia,0,0,0,-2,-2
