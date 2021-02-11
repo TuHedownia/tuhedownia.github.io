@@ -1,13 +1,13 @@
-Gracz,Gra 1,Gra 2,Gra 3,Gra 4,Gra 5,Suma
-boomer,5,6,6,6,7,30
-NeJJmak,4,6,6,5,5,26
-Zelka,4,1,7,4,6,22
-Jakub,6,4,3,6,1,20
-Monika,1,6,1,8,4,20
-Cortez,4,2,4,4,4,18
-Slowianka,4,0,5,4,4,17
-Kubson,1,4,5,2,2,14
-andrzej,0,4,8,2,0,14
-WildBoy,0,4,4,1,0,9
-lascik,0,0,0,0,8,8
-jakubson,4,0,0,0,0,4
+Gracz,Gra 1,Gra 2,Gra 3,Gra 4,Gra 5,Gra 6,Suma
+boomer,5,6,6,6,7,3,33
+NeJJmak,4,6,6,5,5,6,32
+Zelka,4,1,7,4,6,6,28
+Jakub,6,4,3,6,1,6,26
+Monika,1,6,1,8,4,6,26
+Slowianka,4,0,5,4,4,4,21
+Cortez,4,2,4,4,4,1,19
+Kubson,1,4,5,2,2,5,19
+andrzej,0,4,8,2,0,0,14
+WildBoy,0,4,4,1,0,3,12
+lascik,0,0,0,0,8,0,8
+jakubson,4,0,0,0,0,0,4
